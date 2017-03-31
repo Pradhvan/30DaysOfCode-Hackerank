@@ -2,6 +2,19 @@ import sys
 
 N = int(raw_input().strip())
 
+n =str(N)
+
+length = len(n)
+ 
+m = 1
+
+i = 1
+
+while i<length:
+	m = m
+	i+=1
+	m=m*10
+
 E = ['0','2','4','6','8']
 
 O = ['1','3','5','7','9']
@@ -25,7 +38,7 @@ if N in range (0,10):
 		print "Weird"
 		
 elif N >9:
-	num = N%10
+	num = N%m
 
 	NUM = str(num)
 
